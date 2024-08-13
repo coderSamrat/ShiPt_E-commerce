@@ -8,10 +8,6 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-### Project View
-
--[Project](./src/Components/Assets/ProjectView.png)
-
 
 ### Font Awesome Icons Setup
 
