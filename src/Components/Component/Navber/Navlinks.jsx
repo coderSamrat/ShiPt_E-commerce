@@ -20,7 +20,7 @@ const Nav = () => {
                         Links.map((link) => {
                               return (
                                     <li key={link.id}>
-                                          <NavLink to={link.to} className={({ isActive }) => `${isActive ? 'text-pink-600 font-bold uppercase' : 'text-white'} hover:text-pink-600 transition-colors duration-300`}>
+                                          <NavLink to={link.to} className={({ isActive }) => `${isActive ? 'text-pink-600 font-bold uppercase' : 'text-white'} hover:text-pink-600 transition-colors duration-300`} onClick={() => window.scrollTo(0, 0)}>
                                                 {link.label}
                                           </NavLink>
                                     </li>
@@ -53,7 +53,7 @@ const Navlinks = () => {
                                     <FontAwesomeIcon icon={faUserAlt} />
                               </Button>
                         </Link>
-                        <Link to="/cart" >
+                        <Link to="/cart" onClick={() => window.scrollTo(0, 0)} >
                               <div className='relative'>
                                     <Button>
                                           <FontAwesomeIcon icon={faOpencart} />

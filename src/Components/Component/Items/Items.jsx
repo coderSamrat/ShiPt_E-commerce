@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Items = (props) => {
       return (
-            <Link to={`/product/${props.id}`}>
+            <Link to={`/product/${props.id}`} onClick={() => window.scrollTo(0, 0)}>
                   <div className='shadow-5xl hover:shadow-3xl rounded hover:rounded-none transition duration-500 group'>
                         <div className="flex flex-col justify-between">
                               <div className="w-full md:h-[350px] h-full rounded">
